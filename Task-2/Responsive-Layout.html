@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Layout</title>
+	<style>
+    		*{
+        		box-sizing: border-box;
+    		 }
+    		.blank
+		{
+    			background-color: rgb(12, 132, 245);
+    			height:50px;
+    			margin-bottom:10px;
+    			border-radius: 20px;
+		}
+		nav
+		{
+			background-image:url(./image/spriteimage.svg);
+			float: right;
+			width: 200px;
+			background-position:0px 45px;
+			height: 60px;
+		}
+		.header
+		{
+			font-family: verdana;
+			text-align: center;
+    			background-color: rgb(112, 186, 235);
+    			padding:30px;
+    			font-size: 20px;
+		}
+		.flex-container 
+		{
+		  	display: flex;
+		  	flex-wrap: wrap;
+		}
+		.left
+		{
+		    	
+		    	background-color: #eeb518;
+		    	margin: 0px;
+		    	flex:33%;
+		    	flex-wrap: wrap;
+		    	
+		}
+		.middle
+		{
+		    background-color: #b772df;
+		    margin: 0px;
+		    flex:33%;
+		    flex-wrap: wrap;
+		}
+		.right
+		{
+		    background-color: #ee1818;
+		    margin: 0px;
+		    flex:33%;
+		    flex-wrap: wrap;
+		}
+		.signup
+		{
+		    	font-family: verdana;
+			text-align: center;
+		    	background-color: rgb(132, 214, 247);
+		    	padding: 20px;
+		    	font-size: 20px;
+		    	flex-wrap: wrap;
+		}
+		.content
+		{
+		    	font-family: verdana;
+			text-align: center;
+		    	background-color: rgb(176, 215, 231);
+		    	padding: 150px;
+		    	font-size: 20px;
+		    	flex-wrap: wrap;
+		}
+		@media screen and (min-width: 320px) and (max-width: 480px)
+		{
+			.left,.middle,.right,.signup,.content
+			{
+				flex:100%;
+			}
+		}
+		@media screen and (min-width: 481px) and (max-width: 768px)
+		{
+			.left,.middle,.right,.signup,.content
+			{
+				flex:50%;
+			}
+		}
+	</style>
+</head>
+<body>
+  <div class="container">
+	  <div class="blank">
+	    <nav></nav>
+	  </div>
+ 	  <div class="header"><b> Header </b></div>
+	  <div class="flex-container">
+      		<img class="left" src="./image/plan.jpeg" width = "320px" height="240px"> 
+     	  	<img class="middle" src="./image/think.jpg" width = "320px" height="240px"> 
+     		  <img class="right" src="./image/success.jpeg" width = "320px" height="240px"> 
+    </div>
+	  <div class="signup"><b> Sign up </b></div>
+    <div class="content"><b> Content </b></div>
+  </div>
+</body>
+</html>
