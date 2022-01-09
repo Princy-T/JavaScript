@@ -1,1 +1,110 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Html CRUD Java Script</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1> Bio Data </h1>
+                <form onsubmit="event.preventDefault();onFormSubmit();" > 
+                    <section>
+                        <div class="row">
+                            <div class="col">
+                                <label> First Name </label>
+                            </div>
+                            <input type="text" name="name" required placeholder="your name">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Last Name </label>
+                            </div>
+                            <input type="text" name="name" required placeholder="father's name">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Gender </lable>
+                            </div>
+                            <input type="radio" name="gender" > Male
+                            <input type="radio" name="gender" > Female
+                            <input type="radio" name="gender" > Other
+                        </div>
+                        <div class="row">   
+                            <div class="col">
+                                <label> E-mail </label>
+                            </div>
+                            <input type="email" name="mail" required placeholder="Enter email">
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Password </label>
+                            </div>
+                            <input type="password" name="pwd" required placeholder="Enter password"><br>
+                            <label>
+                                <input type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <lable> DOB </label>
+                            </div>
+                            <input type="date" name="dob" required>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Phone Number </lable>
+                            </div>
+                            <select >
+                                <option>+91</option>
+                                <option>+62</option>
+                                <option>+98</option>
+                                <option>+964</option>
+                                <option>+1-876</option>
+                            </select>
+                            <input type="Phone" placeholder="98765*****" required>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Hobby </lable>
+                            </div>
+                            <input type="checkbox">Singing
+                            <input type="checkbox">Drawing
+                            <input type="checkbox">Playing
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label> Address </lable>
+                            </div>
+                            <textarea placeholder="type permanent address with pincode" style="height:200px" required></textarea>
+                        </div>
+                        <div>
+                            <div class="row">
+                            <input type="submit" value="Submit"> 
+                            </div>
+                        </div>
+                    </section>
+                </form>
+                <td>
+                    <table class="list" id="biodata">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Gender</th>
+                                <th>E-mail</th>
+                                <th>DOB</th>
+                                <th>Ph.No</th>
+                                <th>Hobby</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
+                        </tbody>
+                    </table>
+                </td>
+        </div>
+        <script src="script.js"> </script>
+    </body>
+</html>
