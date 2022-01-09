@@ -1,0 +1,48 @@
+body 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+* {
+    box-sizing: border-box;
+}
+.container 
+{
+    border-radius: 50px;
+    background-color: #84d5ee;
+    padding: 20px;
+}
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col
+{
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+}
+input[type=submit] 
+{
+    background-color: #59b4d3;
+    color: rgb(8, 8, 8);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+input[type=submit]:hover 
+{
+    background-color: #227700;
+}
+@media screen and (max-width: 600px) 
+{
+    .col, input[type=submit] 
+    {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
