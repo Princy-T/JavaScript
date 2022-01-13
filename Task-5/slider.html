@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
+        <title> Slider Images </title>
+    </head>
+    <body>
+        <div class="slider-container">
+            <i class="fas fa-chevron-left" id="prevbutton"></i>
+            <i class="fas fa-chevron-right" id="nextbutton"></i>
+            <div class="slider-slide">
+                <img src="./images/5.jpg" id="lastslide" alt="">
+                <img src="./images/1.jpg" alt="">
+                <img src="./images/2.jpg" alt="">
+                <img src="./images/3.jpg" alt="">
+                <img src="./images/4.jpg" alt="">
+                <img src="./images/5.jpg" alt="">
+                <img src="./images/1.jpg" id="firstslide" alt="">
+            </div>
+        </div>
+        <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        <script src="script.js"></script>
+    </body>
+</html>
