@@ -1,44 +1,123 @@
-*{
-    padding: 0px;
-    margin: 0px;
+*
+{
     box-sizing: border-box;
 }
-img
+body 
 {
-    flex:20%;
-    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif; 
+    margin:0
 }
-.slider-container
+img 
 {
-    padding: 40px;
-    margin: 50px;
-    border-color: 5px grey;
-    overflow: hidden;
+    vertical-align: middle;
+}
+.slide-container
+{
+    max-width: 1000px;
     position: relative;
+    margin: auto;
+    padding-top: 50px;
 }
-.slider-slide
+.next-btn,.prev-btn
 {
-    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next-btn 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next-btn:hover,.prev-btn:hover
+{
+    background: rgb(116, 115, 115);
+}
+.number
+{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+}
+.text 
+{
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
     width: 100%;
-    height: 600px;
+    text-align: center;
 }
-#prevbutton
+.textcat
 {
+    color: black;
+    font-size: 25px;
+    padding: 8px 12px;
     position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 3%;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
-#nextbutton
+.navigation-dot
 {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 3%;
-    font-size: 30px;
-    color: rgb(0, 0, 0);
     cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .navigation-dot:hover
+{
+    background-color: #717171;
+}
+.fade 
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade 
+{
+    from 
+    {
+        opacity: .4
+    } 
+    to
+    {
+        opacity: 1
+    }
+}
+@keyframes fade 
+{
+    from 
+    {
+        opacity: .4
+    } 
+    to 
+    {
+        opacity: 1
+    }
+}
+@media only screen and (max-width: 300px) 
+{
+    .prev-btn, .next-btn,.text
+    {
+        font-size: 11px
+    }
 }
