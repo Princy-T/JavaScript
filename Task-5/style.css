@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+img
+{
+    flex:20%;
+    flex-wrap: wrap;
+}
+.slider-container
+{
+    padding: 40px;
+    margin: 50px;
+    border-color: 5px grey;
+    overflow: hidden;
+    position: relative;
+}
+.slider-slide
+{
+    display: flex;
+    width: 100%;
+    height: 600px;
+}
+#prevbutton
+{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 3%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+#nextbutton
+{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 3%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
