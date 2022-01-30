@@ -1,0 +1,63 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+h1 
+{
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+.accordion
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.accordion-title
+{
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(214, 132, 132);
+  line-height: 1.25rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-title::after
+{
+  content: ' \2BAF';
+  margin-left: auto;
+}
+.active-header::after
+{
+  content: ' \2BAD';
+}
+.accordion-answer
+{
+  border-radius: 5px;
+  margin: 5px;
+  background-color: rgb(252, 216, 216);
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 400ms;
+}
+@media(max-width:767px) 
+{
+  html 
+  {
+    font-size: 14px;
+  }
+}
+.accordion-item:target .accordion-answer
+{
+  max-height: 20rem;
+}
