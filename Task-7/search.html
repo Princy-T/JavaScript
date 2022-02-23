@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="search-container">
+                <input type="search" id="search-input" placeholder="search..."/>
+                <button id="search">Search</button>
+            </div>            
+            <div id="buttons">
+                    <button class="button-value" onclick="filterProduct('all')"> All </button>
+                    <button class="button-value" onclick="filterProduct('Jimin')"> Jimin </button>
+                    <button class="button-value" onclick="filterProduct('V')"> V </button>
+                    <button class="button-value" onclick="filterProduct('JKook')"> JKook </button>
+                    <button class="button-value" onclick="filterProduct('JHope')"> JHope </button>
+                    <button class="button-value" onclick="filterProduct('Jin')"> Jin </button>
+                    <button class="button-value" onclick="filterProduct('RM')"> RM </button>
+                    <button class="button-value" onclick="filterProduct('Suga')"> Suga </button>
+            </div>
+            <div id="products"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html> 
