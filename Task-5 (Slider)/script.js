@@ -3,12 +3,12 @@ slideShow(slideIndex);
 
 function plusSlides(n) 
 {
-  slideShow(slideIndex += n);
+  slideShow(slideIndex = n++);
 }
 
 function currentSlide(n)
 {
-  slideShow(slideIndex = n);
+  slideShow(slideIndex == n);
 }
 
 function slideShow(n) 
