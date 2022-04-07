@@ -97,12 +97,12 @@ function validate()
     var isValid = true;
     if(document.getElementById("FirstName").value == "")
     {
-        var isValid = false;
+        isValid = false;
         document.getElementById("firstNameValidationError").classList.remove("hide");
     }
     else
     {
-        var isValid = true;
+        isValid = true;
         if (!document.getElementById("firstNameValidationError").classList.contains("hide"))
             document.getElementById("firstNameValidationError").classList.add("hide");
     }
