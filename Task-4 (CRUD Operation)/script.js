@@ -28,23 +28,23 @@ function insertNewRecord(data)
 {
     var table = document.getElementById("biodata").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
-    cell1 = newRow.insertCell(0);
+    var cell1 = newRow.insertCell(0);
         cell1.innerHTML=data.FirstName;
-    cell2 = newRow.insertCell(1);
+    var cell2 = newRow.insertCell(1);
         cell2.innerHTML=data.LastName; 
-    cell3 = newRow.insertCell(2);
+    var cell3 = newRow.insertCell(2);
         cell3.innerHTML=data.Gender;
-    cell4 = newRow.insertCell(3);
+    var cell4 = newRow.insertCell(3);
         cell4.innerHTML=data.Email;
-    cell5 = newRow.insertCell(4);
+    var cell5 = newRow.insertCell(4);
         cell5.innerHTML=data.date;
-    cell6 = newRow.insertCell(5);
+    var cell6 = newRow.insertCell(5);
         cell6.innerHTML=data.PhoneNumber;
-    cell7 = newRow.insertCell(6);
+    var cell7 = newRow.insertCell(6);
         cell7.innerHTML=data.Hobby;
-    cell8 = newRow.insertCell(7);
+    var cell8 = newRow.insertCell(7);
         cell8.innerHTML=data.Address;
-    cell9 = newRow.insertCell(8);
+    var cell9 = newRow.insertCell(8);
         cell9.innerHTML=`<button onClick="onEdit(this)">Edit</button>
                          <button onClick="onDelete(this)">Delete</button>`;
 }
