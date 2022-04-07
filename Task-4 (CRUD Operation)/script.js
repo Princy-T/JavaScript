@@ -87,14 +87,14 @@ function onDelete(td)
 {
     if (confirm('Are you sure to DELETE this record ?'))
     {
-        row = td.parentElement.parentElement;
+        var row = td.parentElement.parentElement;
         document.getElementById("biodata").deleteRow(row.rowIndex);
         resetForm();
     }
 }
 function validate()
 {
-    isValid = true;
+    var isValid = true;
     if(document.getElementById("FirstName").value == "")
     {
         isValid = false;
