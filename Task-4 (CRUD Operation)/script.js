@@ -102,7 +102,7 @@ function validate()
     }
     else
     {
-        isValid = true;
+        
         if (!document.getElementById("firstNameValidationError").classList.contains("hide"))
             document.getElementById("firstNameValidationError").classList.add("hide");
     }
