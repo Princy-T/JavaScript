@@ -14,7 +14,8 @@ document.querySelector('#push').onclick = function(){
         </div>
         `;
         var todo_tasks = document.querySelectorAll('.delete');
-        for (var i = 0; i < todo_tasks.length; i++) 
+        var i;
+        for ( i = 0; i < todo_tasks.length; i++) 
         {
             todo_tasks[i].onclick = function()
             {
@@ -22,7 +23,8 @@ document.querySelector('#push').onclick = function(){
             }            
         }
         var tasks = document.querySelectorAll('#taskname');
-        for (var i = 0; i < tasks.length; i++) 
+        var i;
+        for (i = 0; i < tasks.length; i++) 
         {
             tasks[i].onclick = function()
             {
