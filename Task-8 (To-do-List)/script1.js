@@ -23,7 +23,6 @@ document.querySelector('#push').onclick = function(){
             }            
         }
         var tasks = document.querySelectorAll('#taskname');
-        var i;
         for (i = 0; i < tasks.length; i++) 
         {
             tasks[i].onclick = function()
